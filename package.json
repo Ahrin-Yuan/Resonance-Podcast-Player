@@ -1,0 +1,26 @@
+{
+  "name": "resonance-podcast-player",
+  "version": "1.0.0",
+  "description": "Resonance Podcast Player to listen to Podcasts",
+  "homepage": "https://github.com/Ahrin-Yuan/Resonance-Podcast-Player#readme",
+  "bugs": {
+    "url": "https://github.com/Ahrin-Yuan/Resonance-Podcast-Player/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahrin-Yuan/Resonance-Podcast-Player.git"
+  },
+  "license": "ISC",
+  "author": "Irene",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0"
+  }
+}
