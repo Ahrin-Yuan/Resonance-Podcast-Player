@@ -19,18 +19,40 @@
     <div class="nav-wrapper">
         <nav class="nav">
             <h1 class="nav-title">Resonance Podcast Player</h1>
-            <i class="fa-solid fa-radio"></i>
+            <!-- <i class="fa-solid fa-compact-disc"></i> -->
+             <i class="fa-solid fa-record-vinyl"></i>
         </nav>
     </div>
     
     <div class="page-wrapper">
         <!-- Search Containter -->
          <div class="search-container">
+            <!-- Seach History -->
+             <div class="custom-select">
+                <select name="searchHistory" id="searchHistory"
+                title="Search History">
+                    <option value="">Select a Previous Search</option>
+                </select>
+             </div>
+
+            <!-- Search Input -->
             <input type="text" id="searchInput" placeholder="Search by Podcast / Topic">
+
+            <!-- Search Buttons -->
+             <div class="search-btn">
+                <button type="button" id="searchBtn">Search</button>
+                <button type="button" id="resetBtn">Clear History</button>
+             </div>
+
+           
         </div>
+
         <!-- Main Containter -->
         <div class="main-container">
-        
+            <!-- Loader -->
+            <div class="loader-container">
+                <i class="fa-solid fa-record-vinyl"></i>
+            </div>
         </div>
 
 
