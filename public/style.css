@@ -287,6 +287,127 @@ button:hover {
     position: relative;
 }
 
+.img-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -50px;
+    margin: 0 auto;
+}
+  
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.4);
+    /* border: 2px solid #4d4746;  */
+}
+
+.title-container {
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+}
+  
+.title-container h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    /* color: #ecde88; */
+    color: #eae7ceff;
+    text-shadow: 0 0 4px rgba(236, 222, 136, 0.3);
+}
+
+.title-container h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0 0;
+    color: #dbd5c9;
+}
+
+/* Controls Container */
+.controls-container {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+/* Progress */
+.progress-container {
+    background: rgba(77, 71, 70, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    height: 4px;
+    width: 90%;
+    border: 1px solid #4d4746;
+}
+
+.progress {
+    background: linear-gradient(90deg, #ecde88 0%, #f0d78e 100%);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 10px rgba(236, 222, 136, 0.4);
+}
+
+@keyframes loadingAnimation {
+    0%, 100% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+.loading {
+    animation: loadingAnimation 2s infinite ease-in-out;
+}
+
+.duration-wrapper {
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+    color: #dbd5c9;
+}
+
+/* Controls */
+.player-controls {
+    position: relative;
+    top: -15px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-controls .fas {
+    font-size: 30px;
+    color: #dbd5c9;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.player-controls .fas:hover {
+    /* filter: brightness(80%); */
+    color: #ecde88;
+    filter: drop-shadow(0 0 6px rgba(236, 222, 136, 0.5));
+}
+
+.main-button {
+    position: relative;
+    left: 3px;
+}
+
+
+
+
 /* Queue */
 .queue{
     height: calc(100% - 450px);
