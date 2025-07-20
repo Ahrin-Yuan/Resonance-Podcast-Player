@@ -413,7 +413,7 @@ button:hover {
 
 
 /* Queue */
-.queue{
+.queue-container{
     height: calc(100% - 450px);
     width: 400px;
     background: rgba(43, 42, 44, 0.95);
