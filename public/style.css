@@ -45,6 +45,9 @@ body {
     top: -2px;
     left: 15px;
 }
+.nav-list {
+    display: none;
+}
 
 
 
@@ -244,9 +247,10 @@ button:hover {
 }
 
 .card img {
-    width: 230px; /* reduce width */
+    width: 250px; /* reduce width */
     height: auto;
-    margin: 30px; /* adds space around image */
+    /* margin: 30px;  */  /* adds space around image */ 
+    min-width: 250px;
     
 }
 .card-content {
@@ -481,4 +485,51 @@ button:hover {
 .queue-content .icon-container i:hover {
     color: #ecde88;
     text-shadow: 0 4px 8px rgba(236, 222, 136, 0.3);
+}
+
+
+
+
+/* Smartphone / Tablet Media Navigation ------------------------------------------------------- */
+@media (max-width: 1025px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    /* Navigation */
+    /* if we scroll main container/player container, the nav bar is still locked in place */
+    .nav-wrapper{ 
+        position: fixed;
+        z-index: 10; /* Ensure its always on top of everything */
+    }
+
+    .nav {
+        top: 14px;
+    }
+
+    .nav-title{
+        font-size: 20px;
+    }
+
+    .nav-list {
+        position: relative;
+        display: flex;
+        top: 3px;
+        left: 3px;
+    }
+
+    .nav-list span{
+        font-size: 18px;
+        color: #dbd5c9;
+        position: relative;
+        left: 25px;
+        padding-bottom: 3px;
+    }
+
+    .nav-list span:first-child {
+        margin-right: 10px;
+    }
+
+    .nav-list .selected {
+        border-bottom: 2px solid #ecde88;
+    }
 }
